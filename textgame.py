@@ -58,5 +58,22 @@ def adv():
         stay_put()
     if x.find("3") >= 0:
         print("It has been a substantial amount of time...no one has come,\n"
-              "you'll die if you don't do something soon.")
+              "You'll die if you don't do something soon.")
+        def deperate():
+            print("What do you think is the most important to survival?")
+            x = input("1) Food\n"
+                      "2) Water\n"
+                      "3) Shelter\n"
+                      "4) Warmth\n")
+            if x.find("1") >= 0:
+                print("")
+            if x.find("2") >= 0:
+                print("")
+            if x.find("3") >= 0:
+                print("")
+            if x.find("4") >= 0:
+                print("")
+
+
+
 adv()
