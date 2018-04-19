@@ -201,15 +201,16 @@ def adv():
                         adv()
                     if x.find('2') >= 0:
                         arrows = 3
-                        print ("You have found 3 arrows but they won't last long")
-                        def fight():
-                            x = input('Now that you have arrows, What will you do now?\n'
-                                      '1) Get familiar with your surroundings'
-                                      '2) Stay put and defend yourself'
-                                      '3) Go hunting')
+                        s = ("You have found 3 arrows but they won't last long"
+                             'Now that you have arrows, What will you do now?\n')
+                        x = input('1) Get familiar with your surroundings'
+                                  '2) Stay put and defend yourself'
+                                  '3) Go hunting')
+                        if x.find('1') >= 0:
+                            s = ("
                     if x.find('3') >= 0:
-                        print ("You went searching and didn't encouter anyone...soon after you return to your temperary home, you are ambushed "
-                               "and cannot defend yourself")
+                        s = ("You went searching and didn't encouter anyone...soon after you return to your temperary home, you are ambushed "
+                             "and cannot defend yourself")
                         for letter in s:
                             print(letter, end='')
                             time.sleep(.1)
@@ -236,52 +237,141 @@ def adv():
                       "3) Shelter\n"
                       "4) Warmth\n")
             if x.find("1") >= 0:
-                print("You have food for a substantial amount of time but you are"
-                      "in danger of losing your life from the lack of the other "
+                print("You have food for a substantial amount of time but you "
+                      "losed your life from the lack of the other "
                       "necessities of life")
             if x.find("2") >= 0:
-                print("You are now hydrated, but you die from a sickness"
-                      "because the water was not filtered")
+                s = ("You are now hydrated, but you die from a sickness"
+                     "because the water was not filtered")
+                for letter in s:
+                    print(letter, end='')
+                    time.sleep(.1)
+                print('')
+                s = "You will be revived when the progress bar is complete"
+                for letter in s:
+                    print(letter, end='')
+                    time.sleep(.1)
+                print('')
+                s = "[=======================================================]"
+                for letter in s:
+                    print(letter, end='')
+                    time.sleep(.5)
+                print('')
             if x.find("3") >= 0:
-                print("You are safe from the harm of the weather")
+                s = ("You are safe from the harm of the weather\n"
+                     "What next?")
+                for letter in s:
+                    print(letter, end='')
+                    time.sleep(.1)
+                print('')
+                x = input("1) Food\n"
+                          "2) Water\n"
+                          "3) Warmth\n")
+                if x.find("1") >= 0:
+                    s = ("You now are able to survive a little while longer")
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.1)
+                    print('')
+                    time.sleep(1)
+                    s = ("But it turns out that the berries that you gathered"
+                         "were poison berries, and they killed you")
+                    for letter in s:
+                        print (letter, end='')
+                        time.sleep(.1)
+                    print('')
+                    s = "You will be revived when the progress bar is complete"
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.1)
+                    print('')
+                    s = "[=======================================================]"
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.5)
+                    print('')
+                    adv()
+
+                if x.find("2") >= 0:
+                    s = ("You currently arent dying, so i guess thats good")
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.1)
+                    print('')
+                    time.sleep(3)
+                    s = "Wait"
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.1)
+                    print('')
+                    time.sleep(1.5)
+                    s = ("Something just came out of the woods next to you, "
+                         "its a rabid bear\n"
+                         "You try to run but it is too fast and catches you, "
+                         "You were Killed")
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.1)
+                    print('')
+                    s = "You will be revived when the progress bar is complete"
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.1)
+                    print('')
+                    s = "[=======================================================]"
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.5)
+                    print('')
+                    adv()
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.5)
+                    print('')
+                    
+                if x.find("3") >= 0:
+                    s = ("You are beginning to Hallucinate, You pass out "
+                         "and die from dehydration")
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.1)
+                    print('')
+                    s = "You will be revived when the progress bar is complete"
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.1)
+                    print('')
+                    s = "[=======================================================]"
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.5)
+                    print('')
+                    adv()
             if x.find("4") >= 0:
-                print("You are have successfully made a fire during"
-                      "the cold of night but you are starving")
+                s = ("You are have successfully made a fire during"
+                     "the cold of night")
+                for letter in s:
+                    print(letter, end='')
+                    time.sleep(.1)
+                print('')
+                time.sleep(1)
+                s = ("But the light and smoke attracted hostiles and you were killed")
+                for letter in s:
+                    print(letter, end='')
+                    time.sleep(.1)
+                print('')
+                s = "You will be revived when the progress bar is complete"
+                for letter in s:
+                    print(letter, end='')
+                    time.sleep(.1)
+                print('')
+                s = "[=======================================================]"
+                for letter in s:
+                    print(letter, end='')
+                    time.sleep(.5)
+                print('')
+                adv()
         desperate()
 
 
 adv()
-if x.find("restart") >= 0:
-    s = "You have chosen the easy way out"
-    for letter in s:
-        print(letter, end='')
-        time.sleep(.1)
-    print('')
-    s = "You will be revived when the progress bar is complete"
-    for letter in s:
-        print(letter, end='')
-        time.sleep(.1)
-    print('')
-    s = "[=======================================================]"
-    for letter in s:
-        print(letter, end='')
-        time.sleep(.5)
-    print('')
-
-
-if x.find("quit") >= 0:
-    s = "You have chosen the easy way out"
-    for letter in s:
-        print(letter, end='')
-        time.sleep(.1)
-    print('')
-    s = "You will be revived when the progress bar is complete"
-    for letter in s:
-        print(letter, end='')
-        time.sleep(.1)
-    print('')
-    s = "[=======================================================]"
-    for letter in s:
-        print(letter, end='')
-        time.sleep(.5)
-    print('')
