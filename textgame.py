@@ -96,10 +96,18 @@ def adv():
         adv()
     
     if x.find("2") >= 0:
-        print("You are safe...for now")
+        s = ("You are safe...for now")
+        for letter in s:
+            print(letter, end='')
+            time.sleep(.1)
+        print('')
         print("")
         def stay_put():
-            print("It is now getting dark. What is your next move?")
+            s = ("It is now getting dark. What is your next move?")
+            for letter in s:
+                print(letter, end='')
+                time.sleep(.1)
+            print('')
             x = input("1) Wait until nightfall comes so you can move in darkness and be "
                       "concealed\n"
                       "2) Find a place to spend the night\n"
@@ -169,12 +177,20 @@ def adv():
                 print('')
                 adv()
             if x.find("4") >= 0:
-                print("You found some colored fishing line in your pocket and a "
-                      "bendable stick, so you make a bow\n"
-                      "there's just one problem\n"
-                      "...Arrows\n")
+                s = ("You found some colored fishing line in your pocket and a "
+                     "bendable stick, so you make a bow\n"
+                     "there's just one problem\n"
+                     "...Arrows\n")
+                for letter in s:
+                    print(letter, end='')
+                    time.sleep(.1)
+                print('')
                 def arm():
-                    print("A bow is no good without arrows.")
+                    s = ("A bow is no good without arrows.")
+                    for letter in s:
+                        print(letter, end='')
+                        time.sleep(.1)
+                    print('')
                     x = input("How will you aquire these arrows?\n"
                               "1) Craft your own arrows\n"
                               "2) The island is abandoned, you find some "
@@ -203,11 +219,57 @@ def adv():
                         arrows = 3
                         s = ("You have found 3 arrows but they won't last long"
                              'Now that you have arrows, What will you do now?\n')
-                        x = input('1) Get familiar with your surroundings'
-                                  '2) Stay put and defend yourself'
-                                  '3) Go hunting')
+                        for letter in s:
+                            print(letter, end='')
+                            time.sleep(.1)
+                        print('')
+                        x = input('1) Get familiar with your surroundings\n'
+                                  '2) Stay put and defend yourself\n'
+                                  '3) Go hunting\n')
                         if x.find('1') >= 0:
-                            s = ("
+                            s = ("You encountered 3 enemies, you survived the first two but the third one killed you from behind")
+                            for letter in s:
+                                print(letter, end='')
+                                time.sleep(.1)
+                            print('')
+                            s = "You will be revived when the progress bar is complete"
+                            for letter in s:
+                                print(letter, end='')
+                                time.sleep(.1)
+                            print('')
+                            s = "[=======================================================]"
+                            for letter in s:
+                                print(letter, end='')
+                                time.sleep(.5)
+                            print('')
+                            adv()
+                        if x.find('2') >= 0:
+                            s = ("You hear something overhead, you look up and it is a helicopter\n"
+                                 "You have been saved\n"
+                                 "Thanks for playing!")
+                            for letter in s:
+                                print(letter, end='')
+                                time.sleep(.1)
+                            print('')
+                        if x.find('3') >= 0:
+                            s = ("You encountered a bear that you couldn't outmatch and were inevitably killed")
+                            for letter in s:
+                                print(letter, end='')
+                                time.sleep(.1)
+                            print('')
+                            s = "You will be revived when the progress bar is complete"
+                            for letter in s:
+                                print(letter, end='')
+                                time.sleep(.1)
+                            print('')
+                            s = "[=======================================================]"
+                            for letter in s:
+                                print(letter, end='')
+                                time.sleep(.5)
+                            print('')
+                            adv()
+                    
+                    
                     if x.find('3') >= 0:
                         s = ("You went searching and didn't encouter anyone...soon after you return to your temperary home, you are ambushed "
                              "and cannot defend yourself")
